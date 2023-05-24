@@ -1,0 +1,8 @@
+{
+  "goerli": {
+    "ArtAlley": {
+      "address": "0x854D562eBACCDDa7469339B083aD321251ec3034",
+      "startBlock": 0
+    }
+  }
+}

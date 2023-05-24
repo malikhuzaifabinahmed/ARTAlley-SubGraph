@@ -1,0 +1,102 @@
+type itemCreation @entity(immutable: true) {
+  id: Bytes!
+  owner: Bytes! # address
+  collectionAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  Price: BigInt! # uint256
+  aproval: Boolean! # bool
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type listingCancled @entity(immutable: true) {
+  id: Bytes!
+  owner: Bytes! # address
+  collectionAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type listingSold @entity(immutable: true) {
+  id: Bytes!
+  owner: Bytes! # address
+  collectionAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  Price: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type newListingCreated @entity(immutable: true) {
+  id: Bytes!
+  owner: Bytes! # address
+  collectionAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  listingPrice: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type offerAccepted @entity(immutable: true) {
+  id: Bytes!
+  offerer: Bytes! # address
+  collectionAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  Price: BigInt! # uint256
+  Endtime: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type offerCreated @entity(immutable: true) {
+  id: Bytes!
+  offerer: Bytes! # address
+  collectionAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  Price: BigInt! # uint256
+  Endtime: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type offerDeleted @entity(immutable: true) {
+  id: Bytes!
+  offerer: Bytes! # address
+  collectionAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  Price: BigInt! # uint256
+  Endtime: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type offerUpdated @entity(immutable: true) {
+  id: Bytes!
+  offerer: Bytes! # address
+  collectionAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  Price: BigInt! # uint256
+  Endtime: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type updatedListing @entity(immutable: true) {
+  id: Bytes!
+  owner: Bytes! # address
+  collectionAddress: Bytes! # address
+  tokenId: BigInt! # uint256
+  listingPrice: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
